@@ -1,177 +1,128 @@
-# App-MarsRoverPhotos
+# MarsRoverPhotos app
+
+> This is an application under development. The main development environment is Windows, and currently, the application is only compatible with the Android system.
+
+</br>
+
+<img src="https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/d1b612ae-4500-48d5-9fc2-b027cc12c7cf" alt="Application icon" width="120" height="120" />
 
 <br/>
+<br/>
+
 
 ## Topics:
 
-- [Logo](#logo)
 - [Description](#description)
+- [Technologies used](#technologies)
+- [Functionalities](#functionalities)
 - [Image Screens](#image-screens)
-- [API](#api)
-- [Language and Technologies used](#language-technologies)
-- [Libraries used](#libraries)
-- [Download](#download)
+- [Installation requirements](#installation-requirements)
+- [Setup Instructions](#setup-instructions)
+- [Considerations](#considerations)
 
 <br/>
 
-_______________________________________________________________________________________________________________________________________________________________________________________
 
-### Logo <a name="logo"></a>
+## Description: <a name="description"></a>
 
-<img src="https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/177ddf8b-939b-451f-9a06-8c08db0c7da6" alt="Logo BB" width="150" height="150">
-
-<br/>
-
-_______________________________________________________________________________________________________________________________________________________________________________________
-
-### Description: <a name="description"></a>
-
-Explore Mars with this Mars Rovers photo app! Discover fascinating information and view incredible images from Mars Rovers, including Curiosity, Opportunity and Spirit. Using NASA's data service, this application offers access to more than 600,000 image files captured by the Rovers. Explore diverse cameras, discover images from different Martian days and locations, and immerse yourself in the Rovers' extraordinary space exploration journey on Mars.
+Explore Mars with this <strong>Mars Rovers Photo</strong> app! Discover fascinating information and view incredible images from Mars Rovers, including Curiosity, Opportunity and Spirit. Using NASA's data service, this application offers access to more than 600,000 image files captured by the Rovers. Explore diverse cameras, discover images from different Martian days and locations, and immerse yourself in the Rovers' extraordinary space exploration journey on Mars.
 
 <br/>
 
-_______________________________________________________________________________________________________________________________________________________________________________________
+## Technologies used: <a name="technologies"></a>
 
-### Screen Images: <a name="image-screens"> </a>
-
-#### Splash Screen:
-
-![tela1](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/026cd555-a692-4a0b-aa04-a29875b139bf)
-
-#### Home Screen:
-
-![tela2](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/0fa0ffce-a448-4536-a818-906e81377451)
-
-#### Search Screen:
-
-![tela3](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/69fa382d-1ed0-4958-b86d-0042f44d8bc6)
-> Searching for rover
-
-![tela4](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/529ae8ac-6d98-4fe9-8342-80df73d85559)
-
-> Searching for date
-
-![tela6](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/9ba03aad-a1e3-4df1-a89a-9aeebffb6627)
-
-> Searching for camera
-
-![tela7](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/a4edbab0-b912-4f2a-a78e-38f4f3a599d6)
-
-#### Image details screen:
-
-![tela9](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/d248622b-0ac5-456c-975b-4b1c4ee871e0)
-
-#### Rover data screen:
-
-![tela10](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/4be3cc51-28c7-4af7-bc98-87760d97ab83)
-
-#### Saved items screen:
-
-![tela8](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/69a8c345-443b-49a7-b54c-f68314647431)
-
-> Opening image and downloading
-
-![tela5](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/ff0fa9cb-656a-41de-94fd-6df466394f32)
-
-> Notification
-
-![tela11](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/39fd618c-4497-45f9-b6c5-634065cbd58c)
-
-> File in the physical device gallery
-
-![tela12](https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/a77cdb6b-15f7-4e44-8bd4-a00246f656c7)
+- <strong>Language:</strong> TypeScript;
+- <strong>Frameworks and Libraries:</strong> <a href="https://reactnative.dev">React Native</a>, <a href="https://reactnavigation.org/">React Navigation</a>, <a href="https://styled-components.com/">Styled-components</a>;
+- <strong>Development Tools:</strong> <a href="https://nodejs.org/en">Node.js</a>, Npm, <a href="https://eslint.org/">ESLint</a>, <a href="https://prettier.io/">Prettier</a>;
+- <strong>Code editor:</strong> <a href="https://code.visualstudio.com/">Visual Studio Code</a>;
+- <strong>Emulators and Devices:</strong> <a href="https://developer.android.com/studio?gad_source=1&gclid=CjwKCAjw34qzBhBmEiwAOUQcF9kSopNno5RWRSQ0WyLk1bB4XyOl_5QcNoTa-4kETbUYq4MxXY1bdRoCmXcQAvD_BwE&gclsrc=aw.ds&hl=pt-br">Android Studio</a>, Physical device;
+- <strong>Data Persistence:</strong> <a href="https://reactnative.dev/docs/asyncstorage">Async Storage</a>
 
 <br/>
 
-> #### OBS: Updated date format to: DD/MM/YYYY 
+
+## Functionalities: <a name="functionalities"></a>
+
+
+- <strong>Mars Rover Image Search:</strong>
+Allows users to search and view images captured by Mars rovers using NASA's public API.
+
+- <strong>Rover Exploration:</strong>
+Offers access to images from three different rovers: Curiosity, Opportunity and Spirit.
+Each rover has its own gallery with thousands of images available for exploration.
+
+- <strong>Detailed View:</strong>
+Displays detailed information about each image, including the date it was captured, the rover that captured it, and the camera used.
+
+- <strong>Image Saving:</strong>
+Allows you to save images directly to your phone's gallery for offline access.
+Provides the option to save images to local database using Async Storage for easy retrieval and management.
+
+- <strong>Favorites:</strong>
+Users can bookmark their favorite images for quick and easy access later.
+
+- <strong>Image Sharing:</strong>
+It makes it easy to share images with friends and family through social networks and other platforms.
+
+- <strong>Intuitive Interface:</strong>
+A friendly and intuitive user interface makes it easy to navigate and search for specific images.
+Search filters to find images by date, camera or rover.
+
+- <strong>Notifications:</strong>
+Receive notifications about new available images and app updates.
+
 
 <br/>
 
-_______________________________________________________________________________________________________________________________________________________________________________________
 
-### API: <a name="api"></a>
-
-[NASA Open APIs](https://api.nasa.gov/) (Mars Rover Photos)
-
-<br/>
-
-_______________________________________________________________________________________________________________________________________________________________________________________
+## Image Screens: <a name="image-screens"> </a>
 
 
-### Language and Technologies used <a name="language-technologies"></a>
+<img src="https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/07c7bb34-524f-41ad-a314-0dacd061e3b7" alt="Screen capture1" width="325,6" height="680">
+<img src="https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/b0d59629-59d1-4b9b-b899-7e636a7622d8" alt="Screen capture2" width="325,6" height="680">
+<img src="https://github.com/felipesllopes/App-MarsRoverPhotos/assets/99768939/bc88c942-3b88-479c-b3cf-5503dc4cdcd1" alt="Screen capture3" width="325,6" height="680">
 
-- Typescript
-- Node.Js
-- React Native
-- Expo Bare
+</br>
+</br>
 
-<br/>
+## Installation requirements: <a name="installation-requirements"> </a>
 
-_______________________________________________________________________________________________________________________________________________________________________________________
+- Installing React Native:
 
-### Libraries used <a name="libraries"></a>
+Install and configure <a href="https://reactnative.dev/docs/set-up-your-environment">React Native</a> as described in the official documentation.
+It is necessary to follow all the steps for the application to run correctly.
 
-<table>
-    <tr>
-        <td>Library</td>
-        <td>Version</td>
-    </tr>
-    <tr>
-        <td>expo-google-fonts/signika</td>
-        <td>0.2.3</td>
-    </tr>
-    <tr>
-        <td>react-native-async-storage/async-storage</td>
-        <td>1.18.2</td>
-    </tr>
-    <tr>
-        <td>react-native-community/datetimepicker</td>
-        <td>7.6.2</td>
-    </tr>
-    <tr>
-        <td>react-native-picker/picker</td>
-        <td>2.4.10</td>
-    </tr>
-    <tr>
-        <td>react-navigation/bottom-tabs</td>
-        <td>6.5.11</td>
-    </tr>
-    <tr>
-        <td>react-navigation/native-stack</td>
-        <td>6.9.17</td>
-    </tr>
-    <tr>
-        <td>expo-file-system</td>
-        <td>15.4.5</td>
-    </tr>
-    <tr>
-        <td>expo-font</td>
-        <td>11.4.0</td>
-    </tr>
-    <tr>
-        <td>expo-media-library</td>
-        <td>15.4.1</td>
-    </tr>
-    <tr>
-        <td>expo-notifications</td>
-        <td>0.20.1</td>
-    </tr>
-    <tr>
-        <td>expo-sharing</td>
-        <td>11.5.0</td>
-    </tr>
-    <tr>
-        <td>styled-components</td>
-        <td>6.1.6</td>
-    </tr>
-</table>
+- Android Studio Installation:
 
-<br/>
+Make sure you followed the previous step correctly and installed <a href="https://developer.android.com/studio?hl=pt-br">Android Studio</a>.
 
-_______________________________________________________________________________________________________________________________________________________________________________________
- 
- ### Download: <a name="download"></a>
 
- You can download a preview version for Android here. Note: This file is not available on the Google Play Store. Make sure you really want to proceed with the download.
- 
- [![Download](https://img.shields.io/badge/Download-07C160?style=for-the-badge&logo=download&logoColor=white)](https://drive.google.com/file/d/1aH7VV-bpF_59lSUyf_HvUWcxdAvhgfBP/view?usp=sharing)
+</br>
+
+## Setup Instructions: <a name="setup-instructions"> </a>
+
+
+<strong>1. Clone the Repository:</strong>
+```
+git clone https://github.com/felipesllopes/App-MarsRoverPhotos.git
+cd App-MarsRoverPhotos
+```
+
+<strong>2. Install Dependencies:</strong>
+```
+npm install
+```
+
+<strong>3. Run the Application:</strong>
+
+> With the Android Studio emulator running or a physical device connected via a USB cable (developer mode must be enabled and USB debugging configured), run the following command:
+
+```
+npx react-native run-android
+```
+
+
+## Considerations:
+
+Follow me if you liked this project, or <a href="https://github.com/felipesllopes/felipesllopes/tree/main/#contact">get in touch</a> if you have any questions or would want to contribute to the project.
+
