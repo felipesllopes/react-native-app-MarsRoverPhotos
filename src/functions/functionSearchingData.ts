@@ -1,5 +1,6 @@
+import { API_KEY } from "@env";
 import { IImageData, IRoverData } from "../interface";
-import { api, key } from "../services/api";
+import { url } from "../services/api";
 
 export const functionSearchingData = async (
     setLoading: (value: React.SetStateAction<boolean>) => void,
@@ -13,22 +14,22 @@ export const functionSearchingData = async (
 ) => {
     setLoading(true);
 
-    await api
+    await url
         .get(
-            `mars-photos/api/v1/manifests/${roverName.toLowerCase()}?api_key=${key}`,
+            `mars-photos/api/v1/manifests/${roverName.toLowerCase()}?api_key=${API_KEY}`,
         )
         .then(async data => {
             setRoverData(await data.data.photo_manifest);
             setContextRoverData(await data.data.photo_manifest);
         })
         .then(async () => {
-            await api
+            await url
                 .get(
                     `mars-photos/api/v1/rovers/${roverName.toLowerCase()}/photos?earth_date=${new Date(
                         date.getTime() - 1 * dayInMilliseconds,
                     )
                         .toISOString()
-                        .slice(0, 10)}&api_key=${key}`,
+                        .slice(0, 10)}&api_key=${API_KEY}`,
                 )
                 .then(async value => {
                     let data = [];

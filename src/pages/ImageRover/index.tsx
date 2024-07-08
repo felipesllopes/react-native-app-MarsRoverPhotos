@@ -33,7 +33,6 @@ export const ImageRover: React.FunctionComponent = () => {
     const [camList, setCamList] = useState([]);
     const [cam, setCam] = useState("");
     const [loading, setLoading] = useState(false);
-    const [loadingIcons, setLoadingIcons] = useState(true);
     const { setContextRoverData } = useContext(AuthContext);
     const roverList = ["Curiosity", "Opportunity", "Spirit"];
     const [roverName, setRoverName] = useState("Curiosity");
