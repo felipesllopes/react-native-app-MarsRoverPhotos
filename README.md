@@ -17,6 +17,7 @@
 - [Functionalities](#functionalities)
 - [Image Screens](#image-screens)
 - [Installation requirements](#installation-requirements)
+- [Generating API key](#generating-key)
 - [Setup Instructions](#setup-instructions)
 - [Considerations](#considerations)
 
@@ -96,11 +97,17 @@ It is necessary to follow all the steps for the application to run correctly.
 
 Make sure you followed the previous step correctly and installed <a href="https://developer.android.com/studio?hl=pt-br">Android Studio</a>.
 
+</br>
+
+
+## Generating API key <a name="generating-key"> </a>
+
+Generate your API key through the website https://api.nasa.gov/
+
 
 </br>
 
 ## Setup Instructions: <a name="setup-instructions"> </a>
-
 
 <strong>1. Clone the Repository:</strong>
 ```
@@ -113,7 +120,46 @@ cd App-MarsRoverPhotos
 npm install
 ```
 
-<strong>3. Run the Application:</strong>
+
+<strong>3. Install the dotenv library:</strong>
+```
+npm install -D react-native-dotenv
+```
+> Or with yarn:
+```
+yarn add -D react-native-dotenv
+```
+
+
+<strong>4. In babel.config.js add the following module:</strong>
+> If that fails, follow the alternative option on the website. https://www.npmjs.com/package/react-native-dotenv
+```
+api.cache(false)
+module.exports = {
+  plugins: [
+    ['module:react-native-dotenv']
+  ]
+};
+```
+
+
+<strong>5. Create the .env file in the project root:</strong>
+.env
+```
+API_KEY=yourApiKey
+```
+
+
+<strong>5. Create a type declaration file:</strong>
+> Create a file called env.d.ts in the root of your project so that TypeScript can recognize the @env module.
+```
+declare module '@env' {
+ export const API_KEY: string;
+}
+```
+
+
+<strong>6. Run the Application:</strong>
 
 > With the Android Studio emulator running or a physical device connected via a USB cable (developer mode must be enabled and USB debugging configured), run the following command:
 
