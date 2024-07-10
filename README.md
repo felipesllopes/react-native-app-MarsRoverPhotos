@@ -19,6 +19,7 @@
 - [Installation requirements](#installation-requirements)
 - [Generating API key](#generating-key)
 - [Setup Instructions](#setup-instructions)
+- [Download app](#download-app)
 - [Considerations](#considerations)
 
 <br/>
@@ -167,8 +168,19 @@ declare module '@env' {
 npx react-native run-android
 ```
 
+<br/>
 
-## Considerations:
+
+## Download app: <a name="download-app"> </a>
+If you want, you can download a version of the app here. 
+> update: 09/07/2024
+> 
+[![Download](https://img.shields.io/badge/download-1DBF73?style=for-the-badge)](https://drive.google.com/file/d/1zXuYxHptISgVZ0U0GXJD5qWoq3jTKXZ5/view?usp=sharing)
+
+
+<br/>
+
+## Considerations: <a name="considerations"> </a>
 
 Follow me if you liked this project, or <a href="https://github.com/felipesllopes/felipesllopes/tree/main/#contact">get in touch</a> if you have any questions or would want to contribute to the project.
 
